@@ -1,0 +1,8 @@
+.env
+.python-version
+.venv
+sql
+__pycache__
+.vercel
+*.csv
+api/test.py
