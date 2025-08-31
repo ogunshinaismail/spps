@@ -248,3 +248,13 @@ async def save_result(data: ResultModel):
     # for result in results:
 
     return {"success": True}
+
+# Port configuration - run the server
+if __name__ == "__main__":
+    uvicorn.run(
+        "main:app",
+        host="0.0.0.0",
+        port=8080,  # Change this to your desired port
+        reload=True,
+        log_level="info"
+    )
